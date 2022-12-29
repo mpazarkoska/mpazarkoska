@@ -1,0 +1,71 @@
+.user-post-info {
+  padding-left: 10px;
+
+  ion-icon {
+    font-size: 24px;
+    transform: translateY(6px);
+  }
+
+  font-size: 14px;
+
+}
+
+.post-item {
+  width: 100%;
+  min-height: 100% !important;
+  position: relative;
+  border-top: 1px #eeeeee solid;
+
+  div.img-placeholder {
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s ease-out;
+    opacity: 0;
+  }
+
+  div.img-preloader {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+
+    ion-spinner {
+      left: 50%;
+      top: 40%;
+      transform: scale(2) translate(-25%, 0);
+    }
+  }
+
+  div.like-funcs {
+    padding: 6px 10px 0 10px;
+    font-size: 12px;
+    ion-icon {
+      font-size: 22px;
+      margin-right: 10px;
+      transform: translateY(6px) !important;
+    }
+  }
+
+  div.post-content {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 10px;
+    z-index: 2;
+    font-weight: 300;
+    font-size: 14px;
+  }
+}
+
+div.loading-info {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 40px 0 40px 0;
+
+  ion-spinner {
+    transform: translateY(6px);
+    margin-right: 10px;
+  }
+}

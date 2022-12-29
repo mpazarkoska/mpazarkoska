@@ -1,0 +1,40 @@
+div.post-content {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+ion-thumbnail {
+  width: 100%;
+  height: auto;
+}
+
+ion-fab {
+  z-index: 500;
+}
+
+p.border-txt-btn {
+  padding: 6px;
+  display: block;
+  border: 1px #CCC solid;
+  border-radius: 6px;
+  margin: 5px 10px 10px 10px;
+}
+
+ion-button {
+  margin: 10px !important;
+}
+
+p.center-text {
+  text-align: center;
+}
+
+.success-icon {
+  font-size: 100px !important;
+  margin-bottom: 40px !important;
+}

@@ -1,0 +1,47 @@
+div.login-content {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+div.login-content h1{
+  font-weight: 700;
+  color: #000;
+  font-size: 20px;
+}
+
+.register-link{
+  border-bottom: 1px #0075cc solid;
+  color: #3a7be0;
+  text-align: left;
+}
+
+input:-webkit-autofill:focus,
+
+input:-webkit-autofill,
+
+textarea:-webkit-autofill,
+
+textarea:-webkit-autofill:hover,
+
+textarea:-webkit-autofill:focus,
+
+select:-webkit-autofill,
+
+select:-webkit-autofill:hover,
+
+select:-webkit-autofill:focus {
+  background: transparent !important;
+  border:none !important;
+
+  -webkit-text-fill-color: inherit !important;
+
+  /* -webkit-box-shadow: 0 0 0px 1000px #FFFFFF inset; */
+
+  transition: background-color 5000s ease-in-out 0s;
+
+}

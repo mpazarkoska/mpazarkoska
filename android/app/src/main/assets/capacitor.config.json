@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.instapics",
+	"appName": "InstaPics",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

@@ -1,0 +1,45 @@
+<ion-content [fullscreen]="true">
+  <div class="register-content">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12">
+          <ion-icon name="people" size="large"></ion-icon>
+          <h1 class="ion-no-margin ion-margin-bottom">Register</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-item>
+            <ion-label position="floating">First Name</ion-label>
+            <ion-input [clearInput]="true" (ionInput)="updateModel($event, 'firstName')"></ion-input>
+            <ion-icon class="ion-align-self-center" name="person-outline" slot="end"></ion-icon>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12">
+          <ion-item>
+            <ion-label position="floating">Last Name</ion-label>
+            <ion-input [clearInput]="true" (ionInput)="updateModel($event, 'lastName')"></ion-input>
+            <ion-icon class="ion-align-self-center" name="person-outline" slot="end"></ion-icon>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12">
+          <ion-item>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input [clearInput]="true" [value]="registerModel.email" (ionInput)="updateModel($event, 'email')"></ion-input>
+            <ion-icon class="ion-align-self-center" name="mail" slot="end"></ion-icon>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12">
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type="password" [clearInput]="true" (ionInput)="updateModel($event, 'password')"></ion-input>
+            <ion-icon name="lock-closed" class="ion-align-self-center" slot="end"></ion-icon>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12" class="ion-margin-top">
+          <ion-button expand="block" color="dark" (click)="registerUser()">Register</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
